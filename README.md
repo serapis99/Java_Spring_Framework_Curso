@@ -11,3 +11,9 @@
 + [desacoplamiento](06_Desacoplamiento/desacoplamiento.md)
 
 ## Inversion de control (IoC)
+
++ [que es IoC](07_IoC/01_que_es.md)
++ [Principio de Hollywood (IoC)](07_IoC/02_sale_de.md)
++ [Ejercicio ejemplo inicio](07_IoC/03_java_sin_IoC.md)
++ [file jar de spring](07_IoC/04_file_jar_spring.md)
++ [agregar jar al proyecto](07_IoC/05_agregar_jar_proyecto.md)
