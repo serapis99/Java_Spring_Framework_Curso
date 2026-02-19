@@ -1,130 +1,101 @@
-# Spring Framework
+# Historia de Spring Framework
 
 ## 📋 Descripción
 
-**Spring Framework** es un Frameworks del ecosistema Java diseñado para ayudar a construir aplicaciones **organizadas, mantenibles y escalables**.
-
-Su propósito principal es **gestionar la infraestructura interna** de una aplicación:
-
-- creación de objetos
-- conexión entre componentes
-- control del ciclo de vida
-
-Spring **no se enfoca en la lógica del negocio**, sino en permitir que esa lógica evolucione sin que el sistema se vuelva frágil.
+La historia de **Spring Framework** surge como respuesta a la **complejidad del desarrollo empresarial en Java** a finales de los años 90 e inicios de los 2000.  
+Spring aparece como una alternativa más simple y flexible frente al modelo dominante de [[J2EE]] y [[EJB]], y termina influyendo directamente en la evolución del propio estándar Java empresarial.
 
 ---
 
-## 🎯 Problema que resuelve
+## 🕰️ Contexto inicial: J2EE
 
-En aplicaciones Java grandes y en crecimiento:
+En **1999**, Sun Microsystems lanza **J2EE (Java 2 Platform, Enterprise Edition)**, una **especificación** destinada a estandarizar el desarrollo de aplicaciones empresariales en Java.
 
-- los componentes suelen crearse entre sí
-- las dependencias quedan fuertemente acopladas
-- un cambio pequeño impacta muchas clases
-- las pruebas se vuelven costosas y frágiles
+J2EE definía:
+- qué componentes debía tener una aplicación
+- qué servicios debía ofrecer el servidor (seguridad, transacciones, escalabilidad)
 
-Con el tiempo, el sistema se vuelve:
-
-- difícil de mantener
-- difícil de entender
-- difícil de evolucionar
-
-Spring surge para **organizar estas relaciones** y quitarle al código la responsabilidad de gestionar su propia complejidad estructural.
+📌 J2EE indicaba **qué debía existir**, pero no **cómo debía usarse de forma simple**.
 
 ---
 
-## 💡 Idea central (núcleo de Spring)
+## 🧱 EJB: la pieza más problemática
 
-> El código no debe crear ni conectar sus propias dependencias;  
-> esa responsabilidad se delega al framework.
+Dentro de J2EE, **EJB (Enterprise JavaBeans)** se convirtió en el modelo central para la lógica empresarial.
 
-Esta idea es la base de Spring y se apoya en principios como:
+Aunque resolvía problemas reales, EJB:
+- era pesado
+- requería mucha configuración
+- acoplaba el código al servidor
+- dificultaba las pruebas
+- hacía costosas las actualizaciones
 
-- inversión de control (IoC)
-- inyección de dependencias
-- Desacoplamiento
-
-Spring no introduce estos principios,  
-pero los **sistematiza y los hace prácticos**.
-
----
-
-## 🧠 20% Pareto (lo imprescindible)
-
-Si recuerdas esto, **entiendes Spring Framework**:
-
-- Spring actúa como un **contenedor de componentes**
-- Se encarga de:
-  - crear objetos
-  - conectarlos entre sí
-  - gestionar su ciclo de vida
-- El código de negocio solo expresa **qué necesita**
-- No decide **cómo obtenerlo**
-- El sistema resultante es:
-  - menos acoplado
-  - más fácil de probar
-  - más fácil de cambiar
-
-👉 Cuando esto se entiende, el **80% del ecosistema Spring deja de ser confuso**.
+Cada nueva versión de EJB aumentaba la **complejidad accidental** del desarrollo.
 
 ---
 
-## 🔗 Ejemplo conceptual
+## 🌱 El punto de quiebre (2002)
 
-Una aplicación necesita:
+En **2002**, **Rod Johnson** publica el libro:
 
-- procesar pagos
-- enviar notificaciones
+> *Expert One-on-One J2EE Design and Development*
 
-### ❌ Sin Spring
-- el módulo principal decide cómo crear esos servicios
-- conoce implementaciones concretas
-- queda fuertemente acoplado
+En él demuestra que:
+- muchas aplicaciones no necesitaban EJB
+- el estándar había sobrecomplicado el desarrollo
+- era posible construir aplicaciones empresariales usando objetos Java simples
 
-### ✔️ Con Spring
-- el módulo solo declara **qué necesita**
-- Spring:
-  - instancia los servicios
-  - los conecta
-  - permite reemplazarlos si cambian los requisitos
-
-El código se enfoca en el **comportamiento**,  
-no en la **estructura interna**.
+De estas ideas nace **Spring Framework**.
 
 ---
 
-## 🔗 Relación con el ecosistema Spring
+## 🌼 Nacimiento de Spring (2004)
 
-Spring Framework es la **base** sobre la que se construyen otros proyectos:
+En **2004** se lanza oficialmente **Spring Framework 1.0**.
 
-- Spring Boot
-- Spring MVC
-- Spring Data
-- Spring Security
+Spring propone:
+- simplicidad frente a rigidez
+- desacoplamiento frente a dependencia del servidor
+- frameworks que se adapten al código, no al revés
 
-Todos comparten el mismo núcleo:  
-**IoC + DI + desacoplamiento**.
-
----
-
-## 🤔 Reflexión (con respuestas)
-
-**¿Por qué un sistema con muchas dependencias internas es difícil de mantener?**  
-Porque los cambios se propagan entre componentes fuertemente acoplados, aumentando el riesgo de errores.
-
-**¿Qué ventaja tiene separar la lógica del negocio de la infraestructura?**  
-Permite que el negocio evolucione sin verse afectado por cambios técnicos.
-
-**¿Por qué delegar la creación de objetos facilita las pruebas?**  
-Porque las dependencias pueden sustituirse por versiones controladas o simuladas.
-
-**¿Spring reemplaza el buen diseño?**  
-No. Spring facilita aplicar buenos principios, pero el diseño sigue siendo responsabilidad del desarrollador.
+Spring no rompe con Java, pero **cuestiona el modelo pesado de J2EE/EJB**.
 
 ---
 
-## ✍️ Resumen
+## 🚀 Adopción en la industria
 
-🌱 **Spring Framework** es la base del desarrollo backend moderno en Java.  
-Su función es organizar la estructura interna de una aplicación, encargándose de crear y conectar los componentes.  
-Al centralizar esta responsabilidad, reduce el acoplamiento y permite que el software crezca de forma controlada, manteniendo el foco en la lógica del negocio y no en la complejidad estructural.
+Spring es adoptado rápidamente porque:
+- reduce complejidad
+- facilita el mantenimiento
+- mejora la experiencia del desarrollador
+- permite evolucionar sistemas existentes sin reescribirlos
+
+Cuando Java EE comienza a simplificarse, **Spring ya estaba ampliamente establecido en producción**.
+
+---
+
+## 🔄 Impacto en Java empresarial
+
+Con el tiempo:
+- Java EE adopta ideas de Spring
+- EJB se simplifica (EJB 3)
+- se introducen anotaciones y menor configuración
+
+📌 No fue Spring quien siguió al estándar,  
+📌 fue el estándar quien **aprendió de Spring**.
+
+Más adelante:
+- J2EE → Java EE
+- Java EE → [[Jakarta EE]]
+
+---
+
+## 🧠 20% Pareto histórico (lo imprescindible)
+
+- J2EE intentó ordenar el desarrollo empresarial
+- EJB llevó la complejidad demasiado lejos
+- Spring nació como reacción pragmática
+- Su éxito real en producción influyó en el estándar
+- La simplicidad validada por uso ganó frente al diseño rígido
+
+👉 Este patrón se repite constantemente en la historia del software.
