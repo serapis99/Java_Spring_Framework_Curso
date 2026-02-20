@@ -11,17 +11,31 @@
 + [ventajas de spring](05_ventajas_de_spring/ventajas_de_spring.md)
 + [desacoplamiento](06_Desacoplamiento/desacoplamiento.md)
 
-## Inversion de control (IoC)
+## Inversión de control (IoC)
 
-+ [que es IoC](07_IoC/01_que_es.md)
-+ [Principio de Hollywood (IoC)](07_IoC/02_sale_de.md)
-+ [IoC en la historia temprana](07_IoC/07_Ioc_consola_vs_grafica.md)
-+ [ventajas de IoC](07_IoC/08_ventajas_de_ioc.md)
-+ [Ejercicio ejemplo inicio](07_IoC/03_java_sin_IoC.md)
-+ [file jar de spring](07_IoC/04_file_jar_spring.md)
-+ [agregar jar al proyecto](07_IoC/05_agregar_jar_proyecto.md)
-+ [formas de configurar un bean](07_IoC/06_configuraciones_de_bean.md)
-+ [IoC inicios](07_IoC/07_Ioc_consola_vs_grafica.md)
-+ [Ventajas de IoC](07_IoC/08_ventajas_de_ioc.md)
-+ [configurar spring con xml](07_IoC/09_configuracion_de_spring_con_xml.md)
++ [que es IoC](07_IoC/basico/que_es.md)
++ [Principio de Hollywood (IoC)](07_IoC/basico/sale_de.md)
++ [IoC en la historia temprana](07_IoC/basico/Ioc_consola_vs_grafica.md)
++ [ventajas de IoC](07_IoC/basico/ventajas_de_ioc.md)
++ [Ejercicio ejemplo inicio](07_IoC/basico/java_sin_IoC.md)
++ [file jar de spring](07_IoC/basico/file_jar_spring.md)
++ [agregar jar al proyecto](07_IoC/basico/agregar_jar_proyecto.md)
++ [formas de configurar un bean](07_IoC/basico/configuraciones_de_bean.md)
++ [IoC inicios](07_IoC/basico/Ioc_consola_vs_grafica.md)
++ [Ventajas de IoC](07_IoC/basico/ventajas_de_ioc.md)
++ [configurar spring con xml](07_IoC/basico/configuracion_de_spring_con_xml.md)
 
+### inyección de dependencias
+
++ [inyección de dependencias](07_IoC/inyeccion_dependencias/inyeccion_de_dependencias.md)
++ [inyección por constructor](07_IoC/inyeccion_dependencias/inyeccion_por_constructor.md)
++ [inyección por método](07_IoC/inyeccion_dependencias/inyeccion_por_metodo.md)
++ [Inyección de dependencias por campos](07_IoC/inyeccion_dependencias/Inyeccion_de_dependencias_por_campos.md)
++ [Inyección de dependencias desde archivos externos](07_IoC/inyeccion_dependencias/Inyeccion_de_dependencias_desde_archivos_externos.md)
++ [Singleton vs Prototype en Spring](07_IoC/inyeccion_dependencias/Singleton_vs_Prototype_en_Spring.md)
++ [Ciclo de vida de un Bean en Spring](07_IoC/inyeccion_dependencias/Ciclo_de_vida_de_un_Bean_en_Spring.md)
+
+
+### Anotaciones
+
++ [Anotaciones en Spring](07_IoC/anotaciones/Anotaciones_en_Spring.md)

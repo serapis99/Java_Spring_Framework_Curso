@@ -80,7 +80,3 @@ Un IDE bien configurado no solo facilita escribir código: reduce errores, organ
 ## ✍️ Resumen
 
 ☕ Descarga Eclipse desde su sitio oficial, elige la distribución correcta para Java, descomprímelo en una ubicación estable y configura un workspace para comenzar a desarrollar.
-
----
-
-Cuando quieras, mándame **la siguiente nota** y la seguimos transformando con el mismo nivel de orden y claridad 🚀📘
